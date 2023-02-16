@@ -1,2 +1,4 @@
 .git-credentials
-/target
+/target/
+Cargo.lock
+**/*.rs.bk
