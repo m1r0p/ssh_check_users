@@ -46,10 +46,12 @@ fn main() {
             Err(err) => println!("{:?}", err),
         }
     }
+    println!("######################RESULTS#########################\n");
     if users_dataset.len() > 0 {
-        println!("######################RESULTS#########################\n");
         for (ip, users) in &users_dataset {
             println!("host - {:?}, users - {:?}", &ip, &users);
         }
+    } else {
+        println!("There are no illegal users in {} subnet", &args[1]);
     }
 }
