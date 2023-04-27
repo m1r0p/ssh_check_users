@@ -1,5 +1,6 @@
 mod functions;
 
+
 use functions::*;
 use std::env;
 extern crate ipnet;
